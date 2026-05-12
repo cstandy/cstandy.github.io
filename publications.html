@@ -30,6 +30,8 @@
         <span class="legend-item"><span class="pill demo legend-pill filter-btn" data-filter="demo">Demo</span></span>
         <span class="legend-item"><span class="pill preprint legend-pill filter-btn" data-filter="preprint">Preprint</span></span>
         <span class="legend-sep">·</span>
+        <span class="filter-first-btn" id="filterFirst">1st Author</span>
+        <span class="legend-sep">·</span>
         <span class="legend-note">* Co-first author</span>
       </div>
 
@@ -43,11 +45,11 @@
              - pub-link items: arXiv, Link, GitHub (delete unused ones)
            ============================================================ -->
 
-      <div class="pub-entry" data-type="conference">
+      <div class="pub-entry" data-type="conference" data-first="true">
         <div class="pub-title">The Anatomy of Silent Data Corruption: GPU Error Pattern Study and Modeling Guidance</div>
         <div class="pub-authors"><strong>Chung-Hsuan Tung</strong>, Yanxiang Huang, Nirmal Saxena, Philip Shirvani, Saurabh Hukerikar, Twinkle Jain, Abhishek Tyagi, and Sanjay Gongalore</div>
         <div class="pub-meta">
-          <span class="pill">DSN–S 2026</span>
+          <span class="pill">IEEE/IFIP DSN (Industry Track) 2026</span>
           <a class="pub-link" href="https://arxiv.org/abs/2605.04213" target="_blank" rel="noopener">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             arXiv
@@ -55,7 +57,7 @@
         </div>
       </div>
 
-      <div class="pub-entry" data-type="preprint">
+      <div class="pub-entry" data-type="preprint" data-first="true">
         <div class="pub-title">Real-Time and Scalable Zak-OTFS Receiver Processing on GPUs</div>
         <div class="pub-authors">Junyao Zheng*, <strong>Chung-Hsuan Tung*</strong>, Yuncheng Yao, Nishant Mehrotra, Sandesh Mattu, Zhenzhou Qi, Danyan Zhou, Robert Calderbank, and Tingjun Chen</div>
         <div class="pub-meta">
@@ -71,11 +73,11 @@
         </div>
       </div>
 
-      <div class="pub-entry" data-type="conference">
+      <div class="pub-entry" data-type="conference" data-first="true">
         <div class="pub-title">RISE: Real-time Image Processing for Spectral Energy Detection and Localization</div>
         <div class="pub-authors"><strong>Chung-Hsuan Tung</strong>, Zhenzhou Qi, and Tingjun Chen</div>
         <div class="pub-meta">
-          <span class="pill">DySPAN 2026</span>
+          <span class="pill">IEEE DySPAN 2026</span>
           <a class="pub-link" href="https://arxiv.org/abs/2603.20481" target="_blank" rel="noopener">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             arXiv
@@ -91,10 +93,14 @@
         <div class="pub-title">DecodeX: Exploring and Benchmarking of LDPC Decoding across CPU, GPU, and ASIC Platforms</div>
         <div class="pub-authors">Zhenzhou Qi, Yuncheng Yao, Yiming Li, <strong>Chung-Hsuan Tung</strong>, Junyao Zheng, Danyan Zhou, and Tingjun Chen</div>
         <div class="pub-meta">
-          <span class="pill workshop">HotMobile 2026</span>
+          <span class="pill workshop">ACM HotMobile 2026</span>
           <a class="pub-link" href="https://dl.acm.org/doi/10.1145/3789514.3792034" target="_blank" rel="noopener">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             Link
+          </a>
+          <a class="pub-link" href="https://github.com/functions-lab/DecodeX" target="_blank" rel="noopener">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
           </a>
         </div>
       </div>
@@ -103,7 +109,7 @@
         <div class="pub-title">Nexus: Efficient and Scalable Multi-Cell mmWave Baseband Processing with Heterogeneous Compute</div>
         <div class="pub-authors">Zhenzhou Qi, <strong>Chung-Hsuan Tung</strong>, Zhihui Qi, and Tingjun Chen</div>
         <div class="pub-meta">
-          <span class="pill">MobiCom 2026</span>
+          <span class="pill">ACM MobiCom 2026</span>
           <a class="pub-link" href="https://arxiv.org/abs/2509.04625" target="_blank" rel="noopener">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             arXiv
@@ -127,11 +133,11 @@
         </div>
       </div>
 
-      <div class="pub-entry" data-type="conference">
+      <div class="pub-entry" data-type="conference" data-first="true">
         <div class="pub-title">Savannah: Efficient mmWave Baseband Processing with Minimal and Heterogeneous Resources</div>
         <div class="pub-authors">Zhenzhou Qi*, <strong>Chung-Hsuan Tung*</strong>, Anuj Kalia, and Tingjun Chen</div>
         <div class="pub-meta">
-          <span class="pill">MobiCom 2024</span>
+          <span class="pill">ACM MobiCom 2024</span>
           <a class="pub-link" href="https://doi.org/10.1145/3636534.3690707" target="_blank" rel="noopener">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             Link
@@ -143,11 +149,11 @@
         </div>
       </div>
 
-      <div class="pub-entry" data-type="demo">
+      <div class="pub-entry" data-type="demo" data-first="true">
         <div class="pub-title">Savannah: A Real-time Programmable mmWave Baseband Processing Framework</div>
         <div class="pub-authors">Zhenzhou Qi*, <strong>Chung-Hsuan Tung*</strong>, Anuj Kalia, and Tingjun Chen</div>
         <div class="pub-meta">
-          <span class="pill demo">Demo @ MobiCom 2024</span>
+          <span class="pill demo">Demo @ ACM MobiCom 2024</span>
           <a class="pub-link" href="https://dl.acm.org/doi/abs/10.1145/3636534.3698843" target="_blank" rel="noopener">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             Link
@@ -159,7 +165,7 @@
         <div class="pub-title">Programmable Millimeter-Wave MIMO Radios with Real-Time Baseband Processing</div>
         <div class="pub-authors">Zhenzhou Qi, Zhihui Qi, <strong>Chung-Hsuan Tung</strong>, and Tingjun Chen</div>
         <div class="pub-meta">
-          <span class="pill workshop">WiNTECH 2023</span>
+          <span class="pill workshop">ACM WiNTECH 2023</span>
           <a class="pub-link" href="https://doi.org/10.1145/3615453.3616521" target="_blank" rel="noopener">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             Link
@@ -167,7 +173,7 @@
         </div>
       </div>
 
-      <div class="pub-entry" data-type="conference">
+      <div class="pub-entry" data-type="conference" data-first="true">
         <div class="pub-title">Dynamic Task Remapping for Reliable CNN Training on ReRAM Crossbars</div>
         <div class="pub-authors"><strong>Chung-Hsuan Tung</strong>, Biresh Kumar Joardar, Partha Pratim Pande, Janardhan Rao Doppa, Hai Helen Li, and Krishnendu Chakrabarty</div>
         <div class="pub-meta">
@@ -191,30 +197,37 @@
 
     const btns = document.querySelectorAll('.filter-btn');
     const entries = document.querySelectorAll('.pub-entry');
-    let active = null;
+    const firstBtn = document.getElementById('filterFirst');
+    let activeType = null;
+    let firstActive = false;
+
+    function applyFilters() {
+      btns.forEach(b => {
+        const isActive = b.dataset.filter === activeType;
+        const isDimmed = activeType !== null && !isActive;
+        b.classList.toggle('filter-active', isActive);
+        b.classList.toggle('filter-dimmed', isDimmed);
+      });
+      firstBtn.classList.toggle('active', firstActive);
+
+      entries.forEach(e => {
+        const matchType = activeType === null || e.dataset.type === activeType;
+        const matchFirst = !firstActive || e.dataset.first === 'true';
+        e.style.display = matchType && matchFirst ? '' : 'none';
+      });
+    }
 
     btns.forEach(btn => {
       btn.addEventListener('click', () => {
         const filter = btn.dataset.filter;
-
-        if (active === filter) {
-          // click same tag again → reset everything
-          active = null;
-          btns.forEach(b => b.classList.remove('filter-active', 'filter-dimmed'));
-          entries.forEach(e => { e.style.display = ''; });
-        } else {
-          // activate new filter
-          active = filter;
-          btns.forEach(b => {
-            const isActive = b.dataset.filter === filter;
-            b.classList.toggle('filter-active', isActive);
-            b.classList.toggle('filter-dimmed', !isActive);
-          });
-          entries.forEach(e => {
-            e.style.display = e.dataset.type === filter ? '' : 'none';
-          });
-        }
+        activeType = activeType === filter ? null : filter;
+        applyFilters();
       });
+    });
+
+    firstBtn.addEventListener('click', () => {
+      firstActive = !firstActive;
+      applyFilters();
     });
   </script>
 </body>
