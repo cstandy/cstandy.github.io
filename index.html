@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chung-Hsuan Tung</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <span class="site-title">Chung-Hsuan Tung</span>
+      <nav class="nav-tabs">
+        <a href="index.html" class="nav-tab active">About</a>
+        <a href="publications.html" class="nav-tab">Publications</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+
+    <div class="profile-section">
+      <div class="avatar-wrap">
+        <!-- Replace with: <img src="photo.jpg" alt="Chung-Hsuan Tung" class="avatar-img" /> -->
+        <!-- <div class="avatar-placeholder">YN</div> -->
+        <img src="photo.png" alt="Chung-Hsuan Tung" class="avatar-img" />
+      </div>
+      <div class="profile-info">
+        <h1>Chung-Hsuan Tung</h1>
+        <p class="subtitle">PhD Candidate · Dept. Electrical and Computer Engineering · Duke University</p>
+        <div class="social-links">
+          <button class="social-link email-btn" onclick="copyEmail()" title="Copy email address">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span class="email-label">chunghsuan.tung@duke.edu</span>
+            <span class="copied-label" aria-live="polite">Copied!</span>
+          </button>
+          <a class="social-link" href="https://github.com/cstandy" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+          <a class="social-link" href="https://scholar.google.com/citations?user=XsvQZeoAAAAJ&hl=en" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5z"/></svg>
+            Google Scholar
+          </a>
+          <a class="social-link" href="https://orcid.org/0009-0005-0578-8153" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 3.872-2.484 3.872-3.722 0-2.016-1.284-3.722-3.862-3.722h-2.307z"/></svg>
+            ORCID
+          </a>
+          <a class="social-link" href="CHT_resume_2026-05-10.pdf" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            CV
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">About</h2>
+      <p class="bio-text">
+        I am a fifth-year Ph.D. student in Electrical and Computer Engineering at Duke University, advised by
+        <a href="https://functions-lab.github.io" class="inline-link">Prof. Tingjun Chen</a>.
+        My research focuses on accelerating wireless signal processing, including 5G FR2 MIMO, spectrum sensing, and new waveform receiver design.
+        Before joining in Functions Lab, I worked with <a href="https://athena.duke.edu/people/krishnendu-chakrabarty" class="inline-link">Prof. Krishnendu Chakrabarty</a> at Duke on hardware reliability.
+        Before Duke, I received my B.S. in Electrical Engineering from National Cheng Kung University (NCKU) in Taiwan with a focus on VLSI design and ML hardware.
+        I am broadly interested in computer architecture and systems.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="cv-entry">
+        <div class="cv-year">2021 – present</div>
+        <div class="cv-body">
+          <div class="cv-title">Ph.D. in Electrical and Computer Engineering</div>
+          <div class="cv-place">Duke University</div>
+        </div>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-year">2016 – 2020</div>
+        <div class="cv-body">
+          <div class="cv-title">B.S. in Electrical Engineering</div>
+          <div class="cv-place">National Cheng Kung University</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Internships</h2>
+      <div class="cv-entry">
+        <div class="cv-year">Summer 2025</div>
+        <div class="cv-body">
+          <div class="cv-title">Resilience and Safety Architecture Intern</div>
+          <div class="cv-place">Nvidia, Santa Clara, CA</div>
+        </div>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-year">Summer 2024</div>
+        <div class="cv-body">
+          <div class="cv-title">Machine Learning Intern</div>
+          <div class="cv-place">Xilinx (AMD), San Jose, CA</div>
+        </div>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-year">Summer/Fall 2022</div>
+        <div class="cv-body">
+          <div class="cv-title">Design for Test Intern</div>
+          <div class="cv-place">Nvidia, Santa Clara, CA</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Awards &amp; Honors</h2>
+      <div class="cv-entry">
+        <div class="cv-year">2023/2024/2026</div>
+        <div class="cv-body">
+          <div class="cv-title">ECE and Graduate School Conference Travel Award</div>
+          <div class="cv-place">Duke University</div>
+        </div>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-year">2024</div>
+        <div class="cv-body">
+          <div class="cv-title">Student Leadership Award</div>
+          <div class="cv-place">Center for Ubiquitous Connectivity (CUbiC), Semiconductor Research Cooperation (SRC)</div>
+        </div>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-year">2020</div>
+        <div class="cv-body">
+          <div class="cv-title">Honorary Member</div>
+          <div class="cv-place">The Phi Tau Phi Scholastic Honor Society of the Republic of China </div>
+        </div>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-year">2018</div>
+        <div class="cv-body">
+          <div class="cv-title">Outstanding Winner</div>
+          <div class="cv-place">Synopsys ARC Design Contest</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Service</h2>
+ 
+      <div class="service-subsection">Leadership</div>
+ 
+      <div class="cv-entry">
+        <div class="cv-year">2022 – 2023</div>
+        <div class="cv-body">
+          <div class="cv-title">President</div>
+          <div class="cv-place">Duke Taiwanese Student Association (DTSA), Duke University, Durham, NC</div>
+        </div>
+      </div>
+ 
+      <div class="cv-entry">
+        <div class="cv-year">2019 – 2020</div>
+        <div class="cv-body">
+          <div class="cv-title">Undergraduate Student Representative</div>
+          <div class="cv-place">EECS College Faculty Meetings, NCKU, Tainan, Taiwan</div>
+        </div>
+      </div>
+ 
+      <div class="service-subsection">Volunteering</div>
+ 
+      <div class="cv-entry">
+        <div class="cv-year">2023 – 2024</div>
+        <div class="cv-body">
+          <div class="cv-title">Student Mentor</div>
+          <div class="cv-place"><a class="inline-link" href="https://sites.duke.edu/egaduke/" target="_blank" rel="noopener">Duke Engineering Graduate Ambassadors (EGA)</a>, Durham, NC</div>
+        </div>
+      </div>
+ 
+      <div class="cv-entry">
+        <div class="cv-year">2023</div>
+        <div class="cv-body">
+          <div class="cv-title">Student Volunteer</div>
+          <div class="cv-place">Inspiring Minds Youth &amp; <a class="inline-link" href="https://athena.duke.edu/" target="_blank" rel="noopener">NSF Athena Institute</a>, Durham, NC</div>
+        </div>
+      </div>
+ 
+      <div class="cv-entry">
+        <div class="cv-year">2014</div>
+        <div class="cv-body">
+          <div class="cv-title">Student Volunteer</div>
+          <div class="cv-place">The 26th International Olympiad in Informatics (IOI), Taipei, Taiwan</div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Chung-Hsuan Tung</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function copyEmail() {
+      const email = 'email@duke.edu';
+      navigator.clipboard.writeText(email).then(() => {
+        const btn = document.querySelector('.email-btn');
+        btn.classList.add('copied');
+        setTimeout(() => btn.classList.remove('copied'), 2000);
+      });
+    }
+  </script>
+</body>
+</html>

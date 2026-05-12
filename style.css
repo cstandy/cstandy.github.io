@@ -1,0 +1,477 @@
+/* =============================================
+   Academic Website – style.css
+   Color palette:
+     Navy:  #012169 (Duke blue)
+     Gold:  #B5820A (link color)
+   ============================================= */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navy:       #012169;
+  --navy-light: #e8ecf5;
+  --gold:       #B5820A;
+  --gold-hover: #8a6008;
+  --text:       #1a1a1a;
+  --text-muted: #5a5a5a;
+  --border:     #e0e0e0;
+  --bg:         #ffffff;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Cambria', 'Georgia', serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.55;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ─────────────────────────────────── */
+
+.site-header {
+  background: var(--navy);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 800px;
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.site-title {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'Cambria', 'Georgia', serif;
+  letter-spacing: 0.02em;
+}
+
+.nav-tabs {
+  display: flex;
+  height: 100%;
+}
+
+.nav-tab {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 14px;
+  font-family: 'Cambria', 'Georgia', serif;
+  padding: 0 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.nav-tab:hover {
+  color: #ffffff;
+}
+
+.nav-tab.active {
+  color: #ffffff;
+  border-bottom: 3px solid #C9A227;
+}
+
+/* ── Main layout ─────────────────────────────── */
+
+main.page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 2rem 4rem;
+  flex: 1;
+  width: 100%;
+}
+
+/* ── Profile section ─────────────────────────── */
+
+.profile-section {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.avatar-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--navy);
+  flex-shrink: 0;
+}
+
+.avatar-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: var(--navy-light);
+  border: 3px solid var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: normal;
+  color: var(--navy);
+  flex-shrink: 0;
+  font-family: 'Cambria', 'Georgia', serif;
+  letter-spacing: 0.05em;
+}
+
+.profile-info h1 {
+  font-size: 26px;
+  font-weight: normal;
+  color: var(--text);
+  margin-bottom: 4px;
+  font-family: 'Cambria', 'Georgia', serif;
+}
+
+.profile-info .subtitle {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+  font-family: 'Cambria', 'Georgia', serif;
+  font-style: italic;
+}
+
+/* ── Social links ────────────────────────────── */
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  font-family: 'Cambria', 'Georgia', serif;
+  color: var(--gold);
+  text-decoration: none;
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  padding: 3px 10px;
+  transition: background 0.12s, color 0.12s;
+  background: transparent;
+  cursor: pointer;
+}
+
+.social-link:hover {
+  background: #fdf6e3;
+  color: var(--gold-hover);
+  border-color: var(--gold-hover);
+}
+
+/* Email copy button */
+.email-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.email-label,
+.copied-label {
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.copied-label {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  opacity: 0;
+  white-space: nowrap;
+  color: #2a7a2a;
+}
+
+.email-btn.copied .email-label {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.email-btn.copied .copied-label {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.email-btn.copied {
+  border-color: #2a7a2a;
+  color: #2a7a2a;
+}
+
+/* ── Section ─────────────────────────────────── */
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Cambria', 'Georgia', serif;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 14px;
+  padding-bottom: 7px;
+  border-bottom: 2px solid var(--navy);
+}
+
+.pub-legend {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: -8px;
+  margin-bottom: 16px;
+}
+
+.legend-pill {
+  font-size: 11px;
+  padding: 1px 9px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.legend-pill:hover {
+  opacity: 0.8;
+}
+
+.filter-active {
+  outline: 2px solid #fff;
+  outline-offset: 1px;
+}
+
+.filter-dimmed {
+  opacity: 0.3;
+  filter: saturate(0);
+}
+
+.legend-sep {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.legend-note {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--text-muted);
+  font-family: 'Cambria', 'Georgia', serif;
+}
+
+.bio-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.inline-link {
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(181, 130, 10, 0.35);
+  transition: border-color 0.12s;
+}
+
+.inline-link:hover {
+  border-color: var(--gold);
+}
+
+/* ── CV entries ──────────────────────────────── */
+
+.cv-entry {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 14px;
+}
+
+.cv-year {
+  color: var(--text-muted);
+  font-size: 14px;
+  font-family: 'Cambria', 'Georgia', serif;
+  min-width: 120px;
+  padding-top: 2px;
+  flex-shrink: 0;
+}
+
+.cv-title {
+  font-size: 16px;
+  font-family: 'Cambria', 'Georgia', serif;
+  color: var(--text);
+}
+
+.cv-place {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-top: 1px;
+}
+
+.cv-note {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+.service-subsection {
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Cambria', 'Georgia', serif;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 16px 0 10px;
+}
+
+/* ── Publications ────────────────────────────── */
+
+.pub-entry {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.pub-entry:first-of-type {
+  border-top: 1px solid var(--border);
+}
+
+.pub-title {
+  font-size: 16px;
+  font-family: 'Cambria', 'Georgia', serif;
+  color: var(--text);
+  margin-bottom: 4px;
+  line-height: 1.45;
+}
+
+.pub-authors {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.pub-authors strong {
+  font-style: normal;
+  color: var(--text);
+}
+
+.pub-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+/* Pill badges */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  font-family: 'Cambria', 'Georgia', serif;
+  padding: 2px 11px;
+  border-radius: 999px;
+  background: var(--navy);
+  color: #e8ecf5;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.pill.workshop {
+  background: #1a6b3a;
+  color: #e4f5ec;
+}
+
+.pill.preprint {
+  background: #555555;
+  color: #f2f2f2;
+}
+
+.pill.journal {
+  background: #d4a017;
+  color: #3a2800;
+}
+
+.pill.demo {
+  background: #b5460a;
+  color: #fdeee8;
+}
+
+/* Publication links */
+.pub-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-family: 'Cambria', 'Georgia', serif;
+  color: var(--gold);
+  text-decoration: none;
+  transition: color 0.12s;
+}
+
+.pub-link:hover {
+  color: var(--gold-hover);
+  text-decoration: underline;
+}
+
+/* ── Footer ──────────────────────────────────── */
+
+.site-footer {
+  background: var(--navy-light);
+  border-top: 1px solid var(--border);
+  text-align: center;
+  padding: 1.25rem;
+  font-size: 13px;
+  color: var(--text-muted);
+  font-family: 'Cambria', 'Georgia', serif;
+}
+
+/* ── Responsive ──────────────────────────────── */
+
+@media (max-width: 600px) {
+  main.page {
+    padding: 1.5rem 1.25rem 3rem;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .site-header {
+    padding: 0 1rem;
+  }
+
+  .nav-tab {
+    padding: 0 12px;
+  }
+}
