@@ -1,16 +1,16 @@
 # Chung-Hsuan Tung's Personal Website
 
-Personal academic website built with plain HTML/CSS.
-No frameworks, no build tools.
+Personal academic website built with plain HTML/CSS. No frameworks, no build tools.
 
 Link: [cstandy.github.io](https://cstandy.github.io)
 
 ## Structure
 
 ```
-index.html        # About, Education, Experience, Awards, Service
-publications.html # Publications with interactive category filter
-style.css         # All styles
+index.html        — About, Education, Experience, Awards, Service
+publications.html — Publications with interactive category filter
+style.css         — All styles
+data/             — Resume and photo
 ```
 
 ## Updating
