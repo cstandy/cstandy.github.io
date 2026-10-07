@@ -50,21 +50,29 @@
           </a>
           <a class="social-link" href="data/CHT_resume_2026-09-25.pdf" target="_blank" rel="noopener">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-            CV
+            résumé
           </a>
         </div>
       </div>
     </div>
 
+    <div class="hiring-notice">
+      <strong>I am actively exploring full-time opportunities starting in 2027</strong>
+      in performance optimization, compute acceleration, and hardware reliability.
+      If interested, please
+      <a href="data/CHT_resume_2026-09-25.pdf" target="_blank" rel="noopener">check out my résumé</a>,
+      and feel free to reach out!
+    </div>
+
     <div class="section">
       <h2 class="section-title">About</h2>
       <p class="bio-text">
-        I am a fifth-year Ph.D. student in Electrical and Computer Engineering at Duke University, advised by
+        I am a final-year Ph.D. student in Electrical and Computer Engineering at Duke University, advised by
         <a href="https://functions-lab.github.io" class="inline-link">Prof. Tingjun Chen</a>.
-        My research focuses on accelerating wireless signal processing, including 5G FR2 MIMO, spectrum sensing, and new waveform receiver design.
-        Before joining in Functions Lab, I worked with <a href="https://athena.duke.edu/people/krishnendu-chakrabarty" class="inline-link">Prof. Krishnendu Chakrabarty</a> at Duke on hardware reliability.
-        Before Duke, I received my B.S. in Electrical Engineering from National Cheng Kung University (NCKU) in Taiwan with a focus on VLSI design and ML hardware advised by <a href="https://caslab.ee.ncku.edu.tw/dokuwiki/en:member:advisor" class="inline-link">Prof. Chung-Ho Chen</a>.
-        I am broadly interested in computer architecture and systems.
+        My research focuses on performance optimization and compute acceleration for real-time systems, with recent work on CPU/GPU acceleration of wireless signal processing workloads.
+        Before joining the FuNCtions Lab, I worked with <a href="https://athena.duke.edu/people/krishnendu-chakrabarty" class="inline-link">Prof. Krishnendu Chakrabarty</a> at Duke on hardware reliability and memory-centric computing.
+        Before Duke, I received my B.S. in Electrical Engineering from National Cheng Kung University (NCKU) in Taiwan with a focus on VLSI design and ML hardware under <a href="https://caslab.ee.ncku.edu.tw/dokuwiki/en:member:advisor" class="inline-link">Prof. Chung-Ho Chen</a>.
+        I am broadly interested in computer architecture, high-performance computing, and hardware–software systems.
       </p>
     </div>
 
@@ -221,7 +229,7 @@
     document.getElementById('year').textContent = new Date().getFullYear();
 
     function copyEmail() {
-      const email = 'email@duke.edu';
+      const email = 'chunghsuan.tung@duke.edu';
       navigator.clipboard.writeText(email).then(() => {
         const btn = document.querySelector('.email-btn');
         btn.classList.add('copied');
